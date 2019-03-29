@@ -11,7 +11,7 @@ ff = ["open","close"]
 
 def COP(fname,figname):
     datcop=common.Text2Numpy(filename=fname)
-    r = common.FFT_cop(freq=120,df=datcop["cop"],start=100,end=2500,bias=False)[:,1:3]
+    r = common.FFT_cop(freq=120,df=datcop["cop"],start=100,end=2500,bias=False,sampling=0.01)[:,1:3]
     matrix,center,ang,d0,d1 = common.COPpca(r)
     common.FIGshow(figname,d0,d0@common.Rotation(matrix,0))
     dat = d0@common.Rotation(matrix,0)
