@@ -1,2 +1,9 @@
-# kinematicstraining
-Materials about the class for kinematics training
+# 重心動揺計を用いた実習の教材
+## 重心動揺計の計測原理
+## 重錘10kgの計測値
+## 人の計測データ
+## Pythonを用いたデータ解析
+### 生データの表示
+### ノイズ処理
+### 座標変換
+### 比較検討
