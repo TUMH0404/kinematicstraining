@@ -103,13 +103,13 @@ def COPpca(dat):
     '''
     pca = PCA(n_components=2)
     pca.fit(dat)
-    
+    print(pca.explained_variance_ratio_)
     # 共分散行列
     A = pca.get_covariance()
     
     # 固有値と固有ベクトル
     e_val, e_vec = np.linalg.eig(A)
-    
+    print(e_vec)
     dd0 = dat - pca.mean_
     dat0 = dd0@e_vec
     
